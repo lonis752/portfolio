@@ -39,7 +39,7 @@ const sliderVariants = {
 function Hero() {
   return (
     <div className="relative overflow-hidden h-[calc(100vh-100px)] bg-[linear-gradient(180deg,_#0c0c1d,_#111132)]">
-      <div className="max-w-[1366px] h-full m-auto">
+      <div className="max-w-[1366px] h-full m-auto z-1">
         <motion.div
           variants={textVariants}
           initial="initial"
@@ -60,18 +60,18 @@ function Hero() {
             <br />
             React Developer
           </motion.h2>
-          <motion.div variants={textVariants} className="flex gap-3">
+          <motion.div variants={textVariants} className="flex gap-3 z-10">
             <motion.button
               variants={textVariants}
-              className="border-2 p-3 rounded-2xl cursor-pointer"
+              className="border-2 p-3 rounded-2xl cursor-pointer hover:bg-white hover:text-black"
             >
               Latest Work
             </motion.button>
             <motion.button
               variants={textVariants}
-              className="border-2 p-3 rounded-2xl cursor-pointer"
+              className="border-2 p-3 rounded-2xl cursor-pointer hover:bg-white hover:text-black"
             >
-              Contact Me
+              <a href="Contact" className="cursor-pointer">Contact Me</a>
             </motion.button>
           </motion.div>
           <motion.img
@@ -87,7 +87,7 @@ function Hero() {
         variants={sliderVariants}
         initial="initial"
         animate="animate"
-        className="flex absolute -bottom-35 whitespace-nowrap opacity-2 text-[40vh]"
+        className="flex absolute -bottom-35 whitespace-nowrap opacity-2 text-[40vh] cursor-default z-0"
       >
         React Node.JS Remix Tailwind PostgreSQL Hydrogen
       </motion.div>
