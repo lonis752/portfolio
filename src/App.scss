@@ -1,20 +1,16 @@
-@import "tailwindcss";
-
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
 body {
-  background-color: azure;
-  color: gray;
+  background-color: #0c0c1d;
+  color: white;
 }
 
 a {
@@ -24,5 +20,7 @@ a {
 
 section {
   height: 100vh;
+  width: calc(100vw - 15px);
   scroll-snap-align: center;
+  overflow: hidden;
 }
