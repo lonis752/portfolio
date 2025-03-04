@@ -31,7 +31,7 @@ const sliderVariants = {
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
-      duration: 80,
+      duration: 60,
     },
   },
 };
@@ -46,20 +46,20 @@ function Hero() {
           animate="animate"
           className="h-full flex flex-col justify-center gap-10 w-1/2"
         >
-          <motion.h2
-            variants={textVariants}
-            className="font-bold text-2xl tracking-[10px] text-purple-700"
-          >
-            Lonis Kwacke
+          <motion.h2 variants={textVariants} className="font-bold text-2xl">
+            Hi! I'm Lonis Kwacke
           </motion.h2>
           <motion.h2
             variants={textVariants}
             className="font-extrabold text-5xl"
           >
-            Full-Stack
-            <br />
-            React Developer
+            Full-Stack Developer
           </motion.h2>
+          <motion.p variants={textVariants} className="font-bold text-xl">
+            I specialize in building fast, user-friendly web applications with
+            modern technologies like React, Next.js, and more. Let’s
+            create something great together!"
+          </motion.p>
           <motion.div variants={textVariants} className="flex gap-3 z-10">
             <motion.button
               variants={textVariants}
@@ -71,7 +71,9 @@ function Hero() {
               variants={textVariants}
               className="border-2 p-3 rounded-2xl cursor-pointer hover:bg-white hover:text-black"
             >
-              <a href="Contact" className="cursor-pointer">Contact Me</a>
+              <a href="Contact" className="cursor-pointer">
+                Contact Me
+              </a>
             </motion.button>
           </motion.div>
           <motion.img
@@ -87,7 +89,7 @@ function Hero() {
         variants={sliderVariants}
         initial="initial"
         animate="animate"
-        className="flex absolute -bottom-35 whitespace-nowrap opacity-2 text-[40vh] cursor-default z-0"
+        className="flex absolute -bottom-35 whitespace-nowrap opacity-2 font-bold text-[40vh] cursor-default z-0"
       >
         React Node.JS Remix Tailwind PostgreSQL Hydrogen
       </motion.div>

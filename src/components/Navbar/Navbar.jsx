@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Sidebar from "./Sidebar";
+import Links from "./Links";
 
 function Navbar() {
   return (
@@ -11,10 +12,11 @@ function Navbar() {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="font-bold text-3xl pl-10 md:pl-0"
+            className="font-bold text-3xl pl-10 md:pl-0  tracking-[5px] text-purple-700"
           >
             Lonis Kwacke
           </motion.h1>
+          <Links />
           <div className="flex gap-3">
             <motion.a
               initial={{ opacity: 0, scale: 0.5 }}

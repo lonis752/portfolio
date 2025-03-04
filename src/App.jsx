@@ -11,9 +11,7 @@ function App() {
         <Navbar />
         <Hero />
       </section>
-      <section id="About">
         <Parallax type={"About"} />
-      </section>
       <section>About</section>
       <section id="Portfolio">
         <Parallax type={"Portfolio"} />
