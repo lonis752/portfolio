@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Links from "./Links";
 import "./sidebar.scss";
@@ -25,9 +25,19 @@ const variants = {
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    let handler = () => {
+      setOpen(false);
+    };
+    document.addEventListener("mousedown", handler);
+  });
+
   return (
     <motion.div className="sidebar" animate={open ? "open" : "closed"}>
-      <motion.div className={open ? "bg bg-white" : "bg bg-white/90"} variants={variants}>
+      <motion.div
+        className={open ? "bg bg-white" : "bg bg-white/90"}
+        variants={variants}
+      >
         <Links />
       </motion.div>
       <ToggleButton setOpen={setOpen} />

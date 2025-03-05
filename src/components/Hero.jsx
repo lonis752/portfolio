@@ -38,7 +38,7 @@ const sliderVariants = {
 
 function Hero() {
   return (
-    <div className="relative overflow-hidden h-[calc(100vh-100px)] bg-[linear-gradient(180deg,_#0c0c1d,_#111132)]">
+    <div className="relative overflow-hidden h-[calc(100vh-100px)] bg-[#0c0c1d]">
       <div className="max-w-[1366px] h-full m-auto z-1">
         <motion.div
           variants={textVariants}
