@@ -3,10 +3,15 @@ import Parallax from "./components/Parallax/Parallax";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import ReactLenis from "lenis/react";
+import PortParallax from "./components/PortParallax/PortParallax";
+import Services from "./components/Services";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   return (
     <div>
+      <ReactLenis root>
       <section id="Homepage">
         <Navbar />
         <Hero />
@@ -16,11 +21,13 @@ function App() {
       </div>
       <section>About</section>
       <div id="Portfolio">
+        <PortParallax />
       </div>
-      <section>Project1</section>
-      <section>Project2</section>
-      <section>Project3</section>
-      <section id="Contact">Contact</section>
+      <Portfolio />
+      <section><Services /></section>
+      <section id="Contact">contact</section>
+      <Footer />
+      </ReactLenis>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import ParallaxImg from "./ParallaxImg";
 
 function ParallaxImages() {
   return (
-    <div className="mx-auto flex flex-wrap max-w-5xl px-4 relative z-10">
+    <div className="mx-auto flex flex-wrap gap-1 max-w-5xl px-4 relative z-10">
       <ParallaxImg
         src="/Parallax/css-3.png"
         alt="logo"

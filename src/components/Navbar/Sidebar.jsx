@@ -26,11 +26,18 @@ const Sidebar = () => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    let handler = () => {
-      setOpen(false);
+    let handler = (event) => {
+      if (!event.target.closest(".sidebar")) {
+        setOpen(false);
+      }
     };
+
     document.addEventListener("mousedown", handler);
-  });
+
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  }, []);
 
   return (
     <motion.div className="sidebar" animate={open ? "open" : "closed"}>
@@ -38,9 +45,9 @@ const Sidebar = () => {
         className={open ? "bg bg-white" : "bg bg-white/90"}
         variants={variants}
       >
-        <Links />
+        <Links setOpen={setOpen} />
       </motion.div>
-      <ToggleButton setOpen={setOpen} />
+      <ToggleButton open={open} setOpen={setOpen} />
     </motion.div>
   );
 };

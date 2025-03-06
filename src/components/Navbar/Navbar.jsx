@@ -16,7 +16,6 @@ function Navbar() {
           >
             Lonis Kwacke
           </motion.h1>
-          <Links />
           <div className="flex gap-3">
             <motion.a
               initial={{ opacity: 0, scale: 0.5 }}

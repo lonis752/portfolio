@@ -23,8 +23,7 @@ function CenterImg() {
           opacity,
           backgroundSize,
           clipPath, // Temporarily remove this to debug if necessary
-          backgroundImage:
-            "url(https://plus.unsplash.com/premium_photo-1723860011127-5029e9b914be?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+          backgroundImage: `url('/Parallax/aditya-chinchure-vancouver-unsplash.jpg')`,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
