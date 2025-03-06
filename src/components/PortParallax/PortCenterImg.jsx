@@ -11,7 +11,7 @@ function PortCenterImg() {
   const backgroundSize = useTransform(scrollY, [0, 1500], ["170%", "100%"]);
 
   return (
-    <div ref={ref} className="relative overflow-hidden">
+    <div ref={ref} className="relative">
       <motion.div
         style={{
           opacity,
@@ -24,7 +24,7 @@ function PortCenterImg() {
       >
         <PortParallaxImages />
         <PortParallaxImages2 />
-        <h1 className="font-extrabold text-5xl">What I've Done.</h1>
+        <h1 className="font-extrabold text-5xl relative left-5">What I've Done.</h1>
       </motion.div>
     </div>
   );

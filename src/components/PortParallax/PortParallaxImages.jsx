@@ -14,7 +14,7 @@ function PortParallaxImages() {
         src="/Parallax/GraphQL.png"
         alt="logo"
         start={-80}
-        end={-1400}
+        end={-800}
         className="w-30 h-30"
       />
       <PortParallaxImg
